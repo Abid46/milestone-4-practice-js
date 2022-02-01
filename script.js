@@ -28,16 +28,16 @@
 
 
          // celsius to fahrenhite **
-   function celsius (z){
+/*   function celsius (z){
       var x = z * 9 / 5;
       var y = x + 32;
       console.log(z + " celsius = " + y +" fahrenhite");
    }
    celsius(1);
-
+*/
 
             // grade calculation    **
-   function number (num){
+/*   function number (num){
       if(num >=80){
          console.log("Your grade (A+)");
       }
@@ -61,16 +61,58 @@
       }
    }
    number(99)
-
+*/
 
    // simple interest formula     **
-    function findInterest(p, r, t){
+ /*   function findInterest(p, r, t){
        let x = p * r * t;
        let result = x / 100;
        return result;
     }                // amount , interest % , time Y
     let karim = findInterest(150000, 14, 2)
     console.log("Karim have to pay interest amount is : " + karim);
+*/
+
+
+
+   //  let num = -61;
+   //  let output = Math.abs(num);
+   //  console.log(output);
+
+   // let num = 35.4353;
+   // let output = Math.ceil(num);
+   // let output = Math.floor(num);
+   // let output = Math.round(num);
+   // console.log(output);
+                                          // random number *
+   // for(let i=0; i<10; i++){
+   //    let random = Math.random() * 6;
+   //    let output = Math.round(random);
+   //    console.log(output);
+   // }
+
+
+               // task: find the lowest element of an array 
+   function lowestNum(num){
+      let lowest = num[0];
+      for(let x=0; x<num.length; x++){
+         let y = num[x];
+         if(y < lowest){
+            lowest = y;
+         }
+      }
+      return lowest;
+   }
+   let number = [25, 50,12, 55, 120];
+   let result = lowestNum(number);
+   console.log(result);
+
+   //                   // fibonacci   *
+   // let fibo = [0, 1];
+   // for(let i = 2; i<=10; i++){
+   //    fibo[i] = fibo[i - 1] + fibo[i - 2];
+   //    console.log(fibo);
+   // }
 
 
 
